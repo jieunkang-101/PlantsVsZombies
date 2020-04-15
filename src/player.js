@@ -8,8 +8,8 @@ export const storePlayerState = (initialPlayerState) => {
 }
 
 const initialPlayerValue = { sunflowers: 3, potatoes: 5, beanThrowers: 2, zombies: 2 }
-const playerOne = storePlayerState(initialPlayerValue);
-const playerTwo = storePlayerState(initialPlayerValue);
+export const playerOne = storePlayerState(initialPlayerValue);
+export const playerTwo = storePlayerState(initialPlayerValue);
 
 export const changePlayerState  = (prop) => {
   return (value) => {
@@ -19,3 +19,5 @@ export const changePlayerState  = (prop) => {
     })
   }
 }
+
+export const addSunflower = changePlayerState("sunflowers")(1);
