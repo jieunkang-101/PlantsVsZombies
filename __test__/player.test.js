@@ -2,7 +2,7 @@ import { storePlayerState, changePlayerState, playerOne, playerTwo, addSunflower
 
 describe('changePlayerState', () => {
 
-  test('should change player state by a specigied function', () => {
+  test('should increment amount of sunflowers by 1', () => {
     const addPlant = playerOne(addSunflower);
     expect(addPlant.sunflowers).toBe(4)
   });

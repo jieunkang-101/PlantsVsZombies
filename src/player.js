@@ -20,4 +20,15 @@ export const changePlayerState  = (prop) => {
   }
 }
 
+// Player Attack Methods
 export const addSunflower = changePlayerState("sunflowers")(1);
+export const addPotato = changePlayerState("potatoes")(1);
+export const addBeanThrower = changePlayerState("beanThrowers")(1);
+export const addZombie = changePlayerState("zombies")(1);
+export const loseSunflower = changePlayerState("sunflowers")(-1);
+export const losePotato = changePlayerState("potatoes")(-1);
+export const loseBeanThrower = changePlayerState("beanThrowers")(-1);
+export const killZombie = changePlayerState("zombies")(-1);
+
+
+//Zombie Attack Methods
