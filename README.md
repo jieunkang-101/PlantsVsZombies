@@ -10,19 +10,21 @@
 ## Setup/Installation Requirements
 
 1. Open Terminal and go to the Desktop directory `("cd desktop")`.
-2. Clone this repository to your local machine `("git clone _PlantsVsZombies_")`.
-3. Once the directory is clonded to your local machine, go to the root directory of this project `("cd _PlantsVsZombies_")`.
+2. Clone this repository to your local machine `("git clone PlantsVsZombies")`.
+3. Once the directory is clonded to your local machine, go to the root directory of this project `("cd PlantsVsZombies")`.
 4. Type  `("npm install")` to add the correct Node modules and download necessary dependencies to the project.
 5. Type `("npm run build")` to create _dist_ folder with `bundle.js` file using webpack.
 6. Open cloned directory in Visual Studio Code or preferred text editor `("code .")`.
-7. Use your own API keys and edit variables for API keys in `main.js`.
 7. Open `index.html` in _dist_ folder in a preferred browser to view the project. (Google Chrome is recommended)
 
 
-<!-- ## Behavior Driven Development Specifications
+## Behavior Driven Development Specifications
 
 | Behavior(Spec)  | Input | Output  |
-| :---------------- | :-----: | :-----: | -->
+| :---------------- | :-----: | :-----: |
+| player starts game with garden | start | sunflowers: 3<br> potatoes: 5 <br> beanThrowers: 2 <br> Zombies: 2 
+| player chooses action: 1) Grow Sunflowers 2) Lay Potatoes 3) Throw Beans | 3) Throw Beans | Zombies: 1 
+
 
 
 ## Technologies Used
