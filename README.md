@@ -23,7 +23,7 @@
 | Behavior(Spec)  | Input | Output  |
 | :---------------- | :-----: | :-----: |
 | player starts game with garden | start | sunflowers: 3<br> potatoes: 5 <br> beanThrowers: 2 <br> Zombies: 2 
-| player chooses action: 1) Grow Sunflowers 2) Lay Potatoes 3) Throw Beans | 3) Throw Beans | Zombies: 1 
+| player chooses action: 1) Grow Sunflowers 2) Lay Potatoes 3) Throw Beans | 3) Throw Beans | Zombies: 1 |
 
 
 
