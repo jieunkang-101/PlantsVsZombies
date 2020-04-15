@@ -22,8 +22,12 @@
 
 | Behavior(Spec)  | Input | Output  |
 | :---------------- | :-----: | :-----: |
-| player starts game with garden | start | sunflowers: 3<br> potatoes: 5 <br> beanThrowers: 2 <br> Zombies: 2 
-| player chooses action: 1) Grow Sunflowers 2) Lay Potatoes 3) Throw Beans | 3) Throw Beans | Zombies: 1 |
+| Garden player starts game with garden | start | { sunflowers: 10, potatoes: 10, beanThrowers: 10} |
+| Garden player chooses action to attact zombies: 1) Grow Sunflowers 2) Lay Potatoes 3) Throw Beans | 3) Throw Beans | { sunflowers: 10, potatoes: 10, beanThrowers: 9 } <br> { zombies: 9, zombieAttack: false } |
+| Garden player can grow their plants: 1) Add sunflower 2) Add potatoes 3) Add beanRhrower | 1) Add sunflower | { sunflowers: 11, potatoes: 10, beanThrowers: 9} |
+| Zombie player starts game with zombies | start | { zombies: 10, zombieAttack: flase } |
+| Zombie player chosses action to attack plants: 1) Sunflowers 2) Potatoes 3) Beans | 1) Sunflower | { sunflowers: 9, potatoes: 10, beanThrowers: 9} <br>{ zombies: 9, zombieAttack: true } |
+| Zombie player can add their zombies | Add zombie | { zombies: 9, zombieAttack: true } |
 
 
 
