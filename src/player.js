@@ -15,6 +15,7 @@ export const changeState  = (prop) => {
     })
   }
 }
+
 // stateChangeFunction(state) {
 //   return  ...state, [prop] : (state[prop] || 0) + value
 // }
@@ -64,7 +65,7 @@ export const growBeanThrower = garden(addBeanThrower);
 export const zombieAttackSunflower = changeSunflower(-2);
 export const zombieAttackPotato = changePotato(-2);
 export const zombieAttackBeanThrower = changeBeanThrower(-2);
-export const zombieAttackThreePlants = changeThreeProps(-2, -2, -2);
+export const zombieAttackThreePlants = changeGardenProps(-2, -2, -2);
 export const addZombie = changeZombie(1);
 
 export const attackedSunflower = garden(zombieAttackSunflower);
