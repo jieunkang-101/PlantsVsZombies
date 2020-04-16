@@ -9,7 +9,7 @@ describe('changeState', () => {
   });
 });
 
-describe('changeThreeProps', () => {
+describe('changeThreePropsCurried', () => {
   
   test('should update three properties of garden state', () => {
     const garden = storeState(initialGardenValue);
