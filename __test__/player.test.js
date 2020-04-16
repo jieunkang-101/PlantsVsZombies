@@ -1,10 +1,11 @@
-import { storePlayerState, changePlayerState, garden, zombie, addSunflower } from './../src/player.js';
+import { storeState, changeState, garden, zombie, initialGardenValue, addSunflower } from './../src/player.js';
 
-describe('changePlayerState', () => {
+describe('changeState', () => {
 
   test('should increment amount of sunflowers by 1', () => {
+    const garden = storeState(initialGardenValue);
     const addPlant = garden(addSunflower);
-    expect(addPlant.sunflowers).toBe(4)
+    expect(addPlant.sunflowers).toBe(11)
   });
 
 });

@@ -40,9 +40,9 @@ export const growPotato = garden(addPotato);
 export const growBeanThrower = garden(addBeanThrower);
 
 // Attact plants and Grow zombies for Zombie side
-export const attackedSunflower = changeSunflower(-2);
-export const attackedPotato = changePotato(-2);
-export const attackedBeanThrower = changeBeanThrower(-2);
+export const zombieAttackSunflower = changeSunflower(-2);
+export const zombieAttackPotato = changePotato(-2);
+export const zombieAttackBeanThrower = changeBeanThrower(-2);
 export const addZombie = changeZombie(1);
 
 export const attackedSunflower = garden(zombieAttackSunflower);
